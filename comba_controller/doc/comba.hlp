@@ -1,0 +1,27 @@
+| allData				#### Show all channels and the playlist (JSON)
+| channel_insert <chan> <uri> <pos>	#### Insert [uri] on channel [chan] into position [pos]
+| channel_move <chan> <fromPos> <toPos>	#### On channel [chan] move track at position [fromPos] to position [toPos]
+| channel_off <chan>			#### Deactivate channel [chan] (type "deactivate playlist" for playlist channel)
+| channel_on <chan>			#### Activate channel [chan] (type "activate playlist" for playlist channel)
+| channel_queue <chan> 			#### show channels [chan] queue (JSON)
+| channel_remove <chan> <pos> 		#### Remove Track on position <pos> from channel <chan>
+| channel_seek <chan> <duration>	#### Seek in current playing track on channel <chan> <duration> seconds forward
+| channel_skip <chan>			#### Skip current playing track on channel <chan>
+| channel_volume <chan>	<volume>	#### Set volume <volume> on channel <chan> (playlist for the playlist)
+| currentData				#### Show current playing tracks metadata (JSON)
+| help					#### Shows this help
+| listChannels				#### Shows a list of all channels (JSON)
+| playlist_data				#### Shows the playlist (JSON)
+| playlist_flush			#### Flush playlist
+| playlist_insert <uri> <pos>		#### Insert [uri] into playlist on position [pos]	
+| playlist_load	<uri>			#### Load playlist [uri] JSON or XML, flush an existing playlist
+| playlist_move <fromPos> <toPos>	#### In the playlist move track at position [fromPos] to position [toPos]
+| playlist_pause			#### Pause/stop the playlist
+| playlist_play				#### Start playing playlist	
+| playlist_push	<pos>			#### Move playlist track at position <pos> to the top
+| playlist_remove <pos>			#### Remove track at position <pos> from playlist
+| playlist_seek <duration>		#### Seek in current playing playlist track <duration> seconds forward
+| playlist_skip 			#### Skip current playing playlist track 
+| recorder_start 			#### Start audio recording
+| recorder_stop 			#### Stop audio recording
+| recorder_data 			#### Show recording file and duration of recording
